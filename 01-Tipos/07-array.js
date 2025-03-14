@@ -1,0 +1,10 @@
+let animales = ["perro", "gato", "pez", "loro"];
+console.log( animales);
+console.log( animales[0]);
+animales[4] = "tortuga";
+console.log( animales);
+animales[10] = "elefante";
+console.log( animales);
+console.log( animales.length);
+console.log( animales[9]);
+console.log( typeof animales);
