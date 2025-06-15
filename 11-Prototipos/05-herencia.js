@@ -12,5 +12,10 @@ Entidad.prototype.save = function(){
 Entidad.prototype.validate = function(){
     console.log('valiadando', this.name);
 }
-User.prototype = Entiadad.prototype;
-const user1 = new User();
+//User.prototype = Entidad.prototype;
+//User.prototype.constructor = User;
+//User.prototype = Object.create(Entidad.prototype);
+Object.setPrototypeOf(User.prototype, Entidad.prototype);
+const user = new User();
+console.log(user);
+console.log(user.save());
